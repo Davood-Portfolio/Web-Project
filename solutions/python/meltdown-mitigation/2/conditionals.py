@@ -1,0 +1,38 @@
+"""Reactor safety and efficiency calculations."""
+
+
+def is_criticality_balanced(temperature, neutrons_emitted):
+    """Check if reactor criticality is balanced."""
+    return (
+        temperature < 800 and
+        neutrons_emitted > 500 and
+        temperature * neutrons_emitted < 500000
+    )
+
+
+def reactor_efficiency(voltage, current, theoretical_max_power):
+    """Return efficiency zone of reactor."""
+    generated_power = voltage * current
+    efficiency = (generated_power / theoretical_max_power) * 100
+
+    if efficiency >= 80:
+        return "green"
+    if efficiency >= 60:
+        return "orange"
+    if efficiency >= 30:
+        return "red"
+    return "black"
+
+
+def fail_safe(temperature, neutrons_produced_per_second, threshold):
+    """Return reactor safety status."""
+    value = temperature * neutrons_produced_per_second
+
+    lower_bound = 0.9 * threshold
+    upper_bound = 1.1 * threshold
+
+    if value < lower_bound:
+        return "LOW"
+    if value <= upper_bound:
+        return "NORMAL"
+    return "DANGER"
