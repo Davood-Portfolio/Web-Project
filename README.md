@@ -1,94 +1,47 @@
-# Davood Akbari — Python & JavaScript Developer
+# Web-Project
 
-A developer focused on building modular, maintainable, and real-world software using Python and JavaScript.  
-I enjoy designing clean architectures, working with data, and turning ideas into functional tools.
+This repository contains my programming practice solutions from the Exercism platform.  
+All exercises are automatically synced from Exercism using the GitHub Syncer integration.
 
-This repository contains a curated collection of my practical projects, including CLI tools, data engines, log analyzers, and API integrations.
-
----
-
-## Tech Stack
-
-### Languages
-- Python
-- JavaScript
-- Go (learning)
-
-### Core Skills
-- Modular application design
-- CLI architecture and command parsing
-- SQL and SQLite schema design
-- Data cleaning and validation
-- API integration and HTTP requests
-- Log parsing and reporting
-- OOP principles
-- Git and GitHub workflows
+The repository is organized by language, and each folder includes multiple exercises with their corresponding iterations.
 
 ---
 
-## Featured Projects
+## Structure
 
-### TaskFlow Engine — Modular CLI Task Manager
-A clean and extensible command-line task manager with SQLite persistence.
+solutions/
+python/
+javascript/
 
-Features:
-- Task creation, filtering, and status updates
-- Persistent storage
-- Modular architecture for easy feature expansion
 
-Tech: Python, SQLite, OOP, CLI design
+- The **python** directory contains solutions for Python track exercises.
+- The **javascript** directory contains solutions for JavaScript track exercises.
 
----
-
-### DataInsight Engine — Product and Revenue Analytics
-A CLI analytics tool for product insights, order analysis, and revenue breakdowns.
-
-Features:
-- Revenue calculations
-- Product-level analytics
-- Structured reporting
-
-Tech: Python, SQLite, Data Analysis
+Each exercise is stored in its own folder, following the structure provided by Exercism.
 
 ---
 
-### DataClean Pro — Data Cleaning and Validation Engine
-A lightweight engine for cleaning and validating CSV datasets.
+## Source
 
-Features:
-- Invalid value detection
-- Type conversion
-- Row filtering and normalization
+All content in this repository is generated through the Exercism learning platform:  
+https://exercism.org
 
-Tech: Python, CSV processing
+The repository is automatically updated whenever new iterations are submitted.
 
 ---
 
-### LogAnalyzer Pro — Log Parsing and Error Detection
-A log analysis engine that extracts structured information and identifies warnings and errors.
+## Purpose
 
-Features:
-- Regex-based parsing
-- Error detection
-- Structured reporting
+This repository serves as:
 
-Tech: Python, Regex, File Parsing
+- A record of my progress across multiple programming languages  
+- A reference for reviewing and improving my coding skills  
+- A structured archive of completed Exercism challenges  
 
 ---
 
-### API Fetcher Tool — API Integration and Data Retrieval
-A CLI tool for fetching API data, validating responses, and generating JSON reports.
+## Notes
 
-Features:
-- API requests
-- Response validation
-- JSON output generation
-
-Tech: Python, HTTP requests, JSON processing
-
----
-
-## Exercism Solutions (Python and JavaScript)
-
-This repository also includes structured solutions for Exercism challenges:
-
+- The structure and folder names follow Exercism's automated sync format.
+- No manual modifications are made to the synced exercise folders.
+- Additional personal projects are stored in separate repositories.
