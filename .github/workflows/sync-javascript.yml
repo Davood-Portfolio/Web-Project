@@ -1,0 +1,27 @@
+name: Sync JavaScript Folder
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'solutions/javascript/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Push to Dedicated Repo
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'solutions/javascript'
+          destination-github-username: 'Davood-Portfolio'
+          destination-repository-name: 'Web-Project-Java-script'
+          user-email: 'davood.akbari.fi@gmail.com'
+          target-branch: 'main'
